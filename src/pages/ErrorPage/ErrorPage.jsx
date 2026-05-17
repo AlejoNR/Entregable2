@@ -17,12 +17,14 @@ export default function ErrorPage() {
           <div id='Error'>
             <img src={ImagenError} alt="Imagen de error 404" />
           </div>
-          <Typography variant="h5" className="error-page__title">
-            Dimensión no encontrada
-          </Typography>
-          <Typography variant="body1" className="error-page__description">
-            Parece que te perdiste en el multiverso. Esta página no existe.
-          </Typography>
+          <Box className='error-page__container'>
+            <Typography variant="h5" className="error-page__title">
+              Dimensión no encontrada
+            </Typography>
+            <Typography variant="body1" className="error-page__description">
+              Parece que te perdiste en el multiverso. Esta página no existe.
+            </Typography>
+          </Box>
         </Box>
       </Container>
     </div>
