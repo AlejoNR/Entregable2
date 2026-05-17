@@ -1,0 +1,18 @@
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.pagination-controls .MuiPaginationItem-root {
+  color: #9ab8c8;
+  border: 1px solid rgb(0, 144, 141);
+}
+
+.pagination-controls .Mui-selected {
+  background-color: #34d000;
+  color: #000;
+  font-weight: 700;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+}

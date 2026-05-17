@@ -1,0 +1,242 @@
+.home-page {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+  cursor: url(../../assets/Icons/Pistola_Portal.png), auto;
+}
+
+#Home {
+  background-image: url(../../assets/Images/HomeBackgroundNave.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  cursor: url(../../assets/Icons/Pistola_Portal.png), auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.home-page__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: rgba(255, 255, 255, 0.279);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  img {
+    width: 500px;
+    height: 150px;
+  }
+}
+
+
+.home-page__rating {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  img {
+    width: 100px;
+    height: 70px;
+  }
+}
+
+#tomatoes {
+  width: 120px;
+  height: 50px;
+}
+
+#ratingRoten {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#Tomato {
+  width: 60px;
+}
+
+#Meta {
+  width: 160px;
+  height: 50px;
+}
+
+#Metacritic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+#Watch {
+  width: 70px;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.279);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 300px;
+  height: 200px;
+
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.home-page__title {
+  font-weight: 900 !important;
+  letter-spacing: 3px !important;
+  color: var(--mui-palette-primary-main) !important;
+  text-transform: uppercase !important;
+  filter: drop-shadow(4px 4px 6px rgb(106, 255, 0));
+}
+
+.home-page__subtitle {
+  color: var(--mui-palette-text-secondary) !important;
+  max-width: 600px;
+}
+
+.text-secondary {
+  color: #888;
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+.text-secondary2 {
+  color: #888;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.home-page__cta {
+  margin-top: 16px !important;
+  padding: 12px 32px !important;
+  font-size: 1rem !important;
+}
+
+.ratings:hover {
+  transform: translateY(-5px);
+  background-color: rgba(0, 255, 13, 0.05);
+  box-shadow: 0 10px 25px rgba(0, 255, 13, 0.2) !important;
+  border: 1px solid rgba(0, 255, 13, 0.4) !important;
+}
+
+.home-page__creators {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.creator-card {
+  max-width: 345px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(8px);
+  border-radius: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.creator-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(0, 255, 13, 0.05) !important;
+  box-shadow: 0 10px 25px rgba(0, 255, 13, 0.2) !important;
+  border: 1px solid rgba(0, 255, 13, 0.4) !important;
+}
+
+.creator-name {
+  color: #fff !important;
+  font-weight: bold !important;
+  text-shadow: 1px 1px 2px black;
+}
+
+.creator-desc {
+  color: #ccc !important;
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+
+/* Tablet (≤ 960px) */
+@media (max-width: 960px) {
+  .home-page {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .home-page__rating {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .ratings {
+    width: 240px;
+    height: auto;
+    padding: 16px;
+  }
+
+  .home-page__creators {
+    gap: 20px;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .home-page {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .home-page__content img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .home-page__subtitle {
+    font-size: 0.95rem !important;
+    padding: 0 8px;
+  }
+
+  .home-page__rating {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .ratings {
+    width: 90vw;
+    max-width: 340px;
+    height: auto;
+    padding: 16px;
+  }
+
+  .home-page__creators {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .creator-card {
+    width: 100%;
+    max-width: 340px;
+  }
+}

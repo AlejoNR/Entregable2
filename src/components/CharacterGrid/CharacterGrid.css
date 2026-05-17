@@ -1,0 +1,35 @@
+.skeleton-card {
+  height: 100%;
+}
+
+.skeleton-card__image {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+.skeleton-card__content {
+  padding: 16px;
+}
+
+.skeleton-card__title {
+  width: 80%;
+  height: 24px;
+}
+
+.skeleton-card__line1 {
+  width: 50%;
+  height: 18px;
+}
+
+.skeleton-card__line2 {
+  width: 60%;
+  height: 18px;
+}
+
+.character-grid__error {
+  margin-top: 32px;
+}
+
+.character-grid__empty {
+  margin-top: 32px;
+}

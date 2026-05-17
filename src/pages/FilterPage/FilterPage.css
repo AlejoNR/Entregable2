@@ -1,0 +1,46 @@
+.filter-page {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.filter-page__header {
+  margin-bottom: 32px !important;
+  text-align: center;
+}
+
+.filter-page__title {
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  color: var(--mui-palette-primary-main) !important;
+  text-transform: uppercase !important;
+  margin-bottom: 8px !important;
+}
+
+.filter-page__subtitle {
+  color: var(--mui-palette-text-secondary) !important;
+  margin-bottom: 24px !important;
+}
+
+.filter-page__form-control {
+  min-width: 280px !important;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+}
+
+.filter-page__form-control .MuiOutlinedInput-root fieldset {
+  border-color: rgba(0, 229, 255, 0.3) !important;
+}
+
+.filter-page__form-control .MuiOutlinedInput-root:hover fieldset {
+  border-color: var(--mui-palette-primary-main) !important;
+}
+
+.filter-page__input-label {
+  color: var(--mui-palette-text-secondary) !important;
+}
+
+.filter-page__select {
+  color: var(--mui-palette-text-primary) !important;
+  text-align: left;
+}

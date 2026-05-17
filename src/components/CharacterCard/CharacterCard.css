@@ -1,0 +1,76 @@
+.character-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.character-card__action-area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.character-card__image-wrapper {
+  position: relative;
+}
+
+.character-card__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.character-card__species-chip {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #00ff0d;
+  border: 1px solid rgba(51, 255, 0, 0.222);
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+.character-card__content {
+  flex-grow: 1;
+  padding-bottom: 16px;
+}
+
+.character-card__name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: #e8f4f8;
+}
+
+.character-card__status-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.character-card__status-icon {
+  font-size: 12px;
+}
+
+.character-card__status-text {
+  color: #9ab8c8;
+  font-size: 0.8rem;
+}
+
+.character-card__gender-text {
+  color: #9ab8c8;
+  font-size: 0.8rem;
+}
+
+.character-card:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 13, 0.3) !important;
+  border: 1px solid rgba(0, 255, 13, 0.4);
+}
+
+.character-card__action-area:hover .MuiCardActionArea-focusHighlight {
+  background-color: #00ff0d !important;
+  opacity: 0.1 !important;
+}
