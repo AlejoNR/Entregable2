@@ -24,9 +24,12 @@ export default function HomePage() {
         </Box>
       </Container>
 
+
       <Typography variant="h2" className="home-page__title">
         Amada por la Critica
       </Typography>
+
+
 
       <Container maxWidth="md" className="home-page__rating">
         <div className='ratings'>
@@ -59,7 +62,7 @@ export default function HomePage() {
         </div>
       </Container>
 
-      <Typography variant="h2" className="home-page__title" style={{ marginTop: '64px', marginBottom: '32px' }}>
+      <Typography variant="h2" className="home-page__title">
         Creadores
       </Typography>
 

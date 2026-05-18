@@ -103,7 +103,10 @@
   color: var(--mui-palette-primary-main) !important;
   text-transform: uppercase !important;
   filter: drop-shadow(4px 4px 6px rgb(106, 255, 0));
+  padding: 30px;
 }
+
+
 
 .home-page__subtitle {
   color: var(--mui-palette-text-secondary) !important;
