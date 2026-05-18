@@ -17,7 +17,7 @@
   height: 100%;
   background-image: url('../../assets/Images/RickFlotando.png');
   background-size: cover;
-  background-position: center;
+  background-position: 32% center;
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -49,5 +49,15 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .character-not-found__footer {
+    padding: 1rem;
+  }
+
+  .character-not-found__text {
+    font-size: 1rem !important;
   }
 }
